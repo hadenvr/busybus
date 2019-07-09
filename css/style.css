@@ -54,10 +54,6 @@ nav .menu {
   padding-top: 25px;
 }
 
-.location:hover, .content:hover {
-  background-color: #e0e0e0;
-}
-
 .arrow {
   float: right;
   display: inline-block;
@@ -104,14 +100,6 @@ h2 {
   font-size: 18px;
 }
 
-.search:hover {
-  color: #bdbdbd;
-}
-
-.more:hover {
-  color: #bdbdbd;
-}
-
 .side {
   float: right;
   display: inline-block;
@@ -150,7 +138,7 @@ h2 {
   padding-top: 60px;
 }
 
-.bottom-nav {
+footer {
   padding: 25px;
   width: 420px;
   background-image: url("https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F106Hg0gnBXVHS6TTP8FAjY9IfNWTa2VO3%2Fandroid-only-additional6.png");
