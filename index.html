@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>BusyBus - Frontend Challenge</title>
   <script src="https://kit.fontawesome.com/95e3b16d16.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -13,7 +12,8 @@
 
 <body>
   <section class="container">
-    <nav>
+    <nav><img src="images/status-bar.png" id="status">
+
       <div class="menu">
         <i class="fa fa-bars" aria-hidden="true"></i>
 
@@ -31,10 +31,12 @@
       </div>
 
     </nav>
-
     <section class="bus-list">
 
       <div class="groups">
+
+        <img src="images/map.png" id="map">
+
         <ol class="content">
           <li>
             <h1 id="green">Buses</h1>
@@ -43,33 +45,45 @@
 
         <ol class="side">
           <li>
-            <h1 id="yellow">Arrival</h1>
+            <h1 id="green">Arrival</h1>
           </li>
         </ol>
 
       </div>
       <!-- Eastbound -->
       <div class="groups">
+
+        <div class="divider">
+        </div>
+
         <ol class="content">
           <li>
-            <h1>Eastbound</h1>
+            <h1 class="border">Eastbound</h1>
           </li>
           <li>
-            <h2>60</h2>
+            <h2 id="padtop">60</h2>
           </li>
           <li>
             <h3>Randolph/Harbor Dr</h3>
           </li>
         </ol>
-
         <ol class="time">
           <li>
-            <h1 id="yellow">Every 20 mins</h1>
+            <h1><img src="images/incoming.png" id="incoming">5 mins<h1/>
           </li>
           <li>
-            <h1 class="secondtime" id="yellow">Every 10 mins</h1>
+              <h3>then, 10 mins</h3>
+          </li>
+          <li>
+            <h1 class="secondtime"><img src="images/incoming.png" id="incoming">5 mins</h1>
+          </li>
+          <li>
+              <h3>then, 10 mins</h3>
           </li>
         </ol>
+
+        <div class="seperate" id="padbot">
+        </div>
 
         <ol class="continue">
           <li>
@@ -81,15 +95,17 @@
         </ol>
 
       </div>
+      <div class="divider">
+      </div>
 
       <!-- Northbound -->
       <div class="groups">
         <ol class="content">
           <li>
-            <h1>Northbound</h1>
+            <h1 class="border">Northbound</h1>
           </li>
           <li>
-            <h2>151</h2>
+            <h2 id="padtop">151</h2>
           </li>
           <li>
             <h3>Devon/Clark</h3>
@@ -98,20 +114,25 @@
 
         <ol class="time">
           <li>
-            <h1 id="yellow">Every 16 mins</h1>
+            <h1><img src="images/incoming.png" id="incoming"/>1 mins</h1>
+          </li>
+          <li>
+              <h3>then, 16 mins</h3>
           </li>
         </ol>
 
+      </div>
+      <div class="divider">
       </div>
 
       <!-- Southbound -->
       <div class="groups">
         <ol class="content">
           <li>
-            <h1>Southbound</h1>
+            <h1 class="border">Southbound</h1>
           </li>
           <li>
-            <h2>J14</h2>
+            <h2 id="padtop">J14</h2>
           </li>
           <li>
             <h3>103rd/Stony Island</h3>
@@ -120,16 +141,25 @@
 
         <ol class="time">
           <li>
-            <h1 id="yellow">Every 15 mins</h1>
+            <h1><img src="images/incoming.png" id="incoming"/>Now</h1>
           </li>
           <li>
-            <h1 class="secondtime" id="yellow">Every 10 mins</h1>
+              <h3>then, 15 mins</h3>
+          </li>
+          <li>
+            <h1 class="secondtime"><img src="images/incoming.png" id="incoming"/>5 mins</h1>
+          </li>
+          <li>
+              <h3>then, 10 mins</h3>
           </li>
         </ol>
 
+        <div class="seperate" id="padbot">
+        </div>
+
         <ol class="continue">
           <li>
-            <h2>124</h2>
+            <h2 id="">124</h2>
           </li>
           <li>
             <h3>Navy Pier</h3>
@@ -138,14 +168,17 @@
 
       </div>
 
+      <div class="divider">
+      </div>
+
       <!-- Reroute -->
       <div class="groups">
         <ol class="content">
           <li>
-            <h1>Reroute</h1>
+            <h1 class="border">Reroute</h1>
           </li>
           <li>
-            <h2>6X</h2>
+            <h2 id="padtop">6X</h2>
           </li>
           <li>
             <h3>Jackson Park Express</h3>
@@ -154,20 +187,23 @@
 
         <ol class="time">
           <li>
-            <h1 id="yellow">Not Available</h1>
+            <h1 id="padtop">Not Available</h1>
           </li>
         </ol>
 
+      </div>
+
+      <div class="divider">
       </div>
 
       <!-- Out Of Service -->
       <div class="groups">
         <ol class="content">
           <li>
-            <h1>Out Of Service</h1>
+            <h1 class="border">Out Of Service</h1>
           </li>
           <li>
-            <h2>4</h2>
+            <h2 id="padtop">4</h2>
           </li>
           <li>
             <h3>Cottage Grove</h3>
@@ -176,15 +212,18 @@
 
         <ol class="time">
           <li>
-            <h1 id="yellow">Resumes 12:10am</h1>
+            <h1 id="expad1">Resumes 12:10am</h1>
           </li>
           <li>
-            <h1 class="secondtime" id="yellow">Resumes 12:10am</h1>
+            <h1 class="secondtime" id="expad">Resumes 12:10am</h1>
           </li>
           <li>
-            <h1 class="secondtime" id="yellow">Resumes 6:00am</h1>
+            <h1 class="secondtime" id="expad2">Resumes 6:00am</h1>
           </li>
         </ol>
+
+        <div class="seperate" id="padbot">
+        </div>
 
         <ol class="continue">
           <li>
@@ -194,6 +233,9 @@
             <h3>Madison</h3>
           </li>
         </ol>
+
+        <div class="seperate" id="padbot">
+        </div>
 
         <ol class="continue">
           <li>
